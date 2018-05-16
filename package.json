@@ -8,5 +8,8 @@
     "start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express3-handlebars": "^0.5.2"
+  }
 }

@@ -1,0 +1,127 @@
+body, html{
+  height: 100%;
+}
+#maincontainer{
+  min-height:100%;
+  position: relative;
+}
+#mybody{
+  padding-bottom:60px;
+}
+#mainfooter{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+}
+
+*{
+  font-family: 'Bellefair';
+}
+
+p{ font-size: 1.1rem; }
+h1, h2, h3, h4, h5, h6, header nav a, #mainfooter p{
+  font-family: 'Raleway';
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
+}
+footer{
+  background: #4574b8;
+  color: #ffffff;
+  padding: .66em;
+  font-size: 
+}
+a{ 
+  color: #4574b8;
+}
+nav a {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 2rem;
+}
+.navbar-brand{ margin-left: 0; margin-right: 2rem;}
+a.nav-link:hover{
+  text-decoration: none;
+  color: #4574b8;
+}
+.navbar-toggler {
+  background: #4574b8;
+  padding: .33em;
+}
+
+.pretty-img{
+  border-radius: 10px;
+  padding: 0; 
+  margin: 0em .25em .25em 0em;   
+}
+.navbar-toggler-icon{
+  border-bottom: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  height: 25px;
+  padding: 0px;
+}
+.navbar-toggler-icon::after{
+  content: "";
+  display:block;
+  border-bottom: 3px solid #ffffff;
+  margin: 8px 0px;
+  
+}
+
+.row{ margin: 1em 0; }
+
+#homepage-splash{
+  background-color: #c4c4c4;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #555555;
+  padding: 2em;
+  margin-bottom:1em;
+  background-image: url('../img/splash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homepage-splash p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.service-icon{
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.compressible-img{
+  width:200px; 
+  float: left; 
+  margin-right: 1em; 
+  border-radius:6px; 
+  box-shadow: 2px 2px 10px #c4c4c4;
+}
+@media (max-width:480px){
+  .compressible-img{
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin: 1em 0 1em 0;
+  }
+}
+
+footer p {
+  font-size: .85rem;
+  margin: 0;
+}
+
+.phone-link { font-weight: bold; color: #000000; }
+@media (max-width:720px){
+  .phone-link { 
+    display: block;
+    background-color: #4574b8; 
+    color: #ffffff;
+    text-align: center;
+    padding: .5em;
+    border-radius: 5px;
+  }
+  .phone-link:hover{ color: #ffffff; text-decoration: none; box-shadow: 2px 2px 2px #c4c4c4; }
+}
+.btn-default { background-color: #4574b8; color: #ffffff; }
