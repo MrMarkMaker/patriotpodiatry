@@ -12,7 +12,7 @@
     </div>
     <div class='col-md-6'>
     <h2>Send Us An Email</h2>
-    <form>
+    <form id="contact">
       <div class='form-group'>
         <label for='guestemail'>Email Address</label>
         <input type='email' id='guestemail' class='form-control' name='guestemail' required />
@@ -33,6 +33,29 @@
       
       <button type="submit" class="btn btn-default">Talk To Us!</button>
     </form>
+    <div id="result"></div>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#contact").submit(function(event){
+        // Stop form from submitting normally
+        event.preventDefault();
+        
+        /* Serialize the submitted form control values to be sent to the web server with the request */
+        var formValues = $(this).serialize();
+        
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST","http://localhost:3000/sentmail", true);
+        xmlhttp.onreadystatechange=function(){
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            string=xmlhttp.responseText;
+          }
+        }
+        xmlhttp.send();
+        
+    });
+});
+</script>

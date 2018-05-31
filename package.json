@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express3-handlebars": "^0.5.2"
+    "emailjs": "^2.0.0",
+    "express3-handlebars": "^0.5.2",
+    "nodemailer": "^4.6.4",
+    "request": "^2.87.0"
   }
 }
