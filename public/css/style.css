@@ -58,15 +58,26 @@ a.nav-link:hover{
 .navbar-toggler-icon{
   border-bottom: 3px solid #ffffff;
   border-top: 3px solid #ffffff;
-  height: 25px;
+  height: 30px;
   padding: 0px;
+  background-color: #4574b8;
+  border: 5px solid #4574b8;
+  border-radius: 3px;
 }
-.navbar-toggler-icon::after{
-  content: "";
-  display:block;
-  border-bottom: 3px solid #ffffff;
-  margin: 8px 0px;
-  
+.navbar-toggler-icon::after {
+    content: "";
+    display: block;
+    margin: 0;
+    border-bottom: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    height: 10px;
+}
+.navbar-toggler-icon::before {
+    content: "";
+    display: block;
+    margin: 3px 0px;
+    border-top: 3px solid #ffffff;
+    height: 0;
 }
 
 .row{ margin: 1em 0; }
